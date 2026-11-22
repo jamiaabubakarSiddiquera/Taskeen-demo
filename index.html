@@ -1,0 +1,10 @@
+const guests = document.getElementById('guestCount').value;
+const time = document.getElementById('visitTime').value;
+const note = document.getElementById('specialNote').value;
+const message = encodeURIComponent(
+Hello Taskeen! New Enquiry:\nName: ${name}\nPhone: ${phone}\nType: ${guests}\nTime: ${time}\nNote: ${note || 'None'}
+);
+window.open(https://wa.me{message}, '_blank');
+}
+
+
